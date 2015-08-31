@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+
+
 gem 'foundation-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -15,6 +17,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'tzinfo-data'
+
+gem 'tabs_on_rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

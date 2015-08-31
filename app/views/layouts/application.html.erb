@@ -27,18 +27,16 @@
 
   <h1 class="main-header">Zurb</h1>
 
-  <ul class="header-subnav">
+<ul class="header-subnav">
 
-   <li><%=nav_link 'About', root_path%></li>
-		
+<%= tabs_tag do |tab| %>
+  <%= tab.about    'About', root_path %>
+	<%= tab.music		 'Music', homepage_music_path %>
+  <%= tab.projects 'Projects', homepage_projects_path %>
+	<%= tab.contact  'Contact', homepage_contact_path %>
+<% end %>
 
-   <li><%= link_to "Music",   homepage_music_path %></li>
-
-   <li><%= link_to "Projects",   homepage_projects_path %></li>
-
-	<li><%= link_to "Contact",   homepage_contact_path %></li>
-
-  </ul>
+</ul>
 
 </header> 
 
