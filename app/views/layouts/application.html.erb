@@ -40,5 +40,26 @@
 
 </header> 
 
-  </body>
+<% if current_tab?(:about) %>
+	<h1>Welcome to Sprout Solutions!</h1>
+	<p>This is Sprout Solutions' single page rails app. Cool, huh?</p>
+<% end %>
+
+<% if current_tab?(:music) %>
+	<h1>Sprout Solution's Music</h1>
+	<p>We would describe our sound as, 'cosmic cowboy' music</p>
+<% end %>
+
+<% if current_tab?(:projects) %>
+	<h1>Curious what we're developing?</h1>
+	<p>You can check out our <a href="https://github.com/sproutsolutions?tab=repositories">Github page</a>.</p>
+<% end %>
+
+<% if current_tab?(:contact) %>
+	<h1>How to get in touch with us</h1>
+	<p>Feel free to leave us a comment on our <a href="https://www.facebook.com/sproutsolutionsus">Facebook page</a>!</p>
+<% end %>
+</body>
+<footer>
+</footer>
 </html>
